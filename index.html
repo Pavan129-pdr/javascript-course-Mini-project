@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Listing Page</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .api {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #00000015;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            color: #222;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .price {
+            color: #16803c !important;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .completed {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="api">
+        Loading products...
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
